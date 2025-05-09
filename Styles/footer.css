@@ -1,11 +1,11 @@
 footer {
     padding:0 2vw;
     background-color:rgb(66, 107, 202);
-    position:relative;
-    width:105vw;
+    width:105%;
     bottom:0;
     height:7vw;
-    left:-5vw;
+    position: relative;
+    left:-2.5vw;
 }
 .footer-div {
     display:flex;
@@ -108,7 +108,6 @@ footer {
     footer {
         height:13vw;
         width:105%;
-        position: relative;
         left:-2vw;
     }
     .footer-container {

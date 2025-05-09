@@ -15,6 +15,16 @@ body {
     cursor:default;
 }
 
+.page-wrapper {
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+main {
+    flex:1;
+}
+
 .page-title {
     font-size:6vw;
     text-align: center;
@@ -70,7 +80,7 @@ body {
 
 @media only screen and (min-width:300px) and (max-width:1100px) {
     body {
-        padding-top:15vw;
-        background-position-x:15%;
+        padding-top:28vw;
+        background-position-x:60%;
     }
 }
