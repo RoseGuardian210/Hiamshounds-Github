@@ -1,0 +1,124 @@
+#pdfContent, #pdfContent * {
+    font-family: 'Arial', sans-serif !important;
+    line-height: 1.5vw;
+  }
+
+#pdfContent {
+    background-color: rgb(66, 107, 202);
+    color: black;
+    margin-bottom:9vw;
+    width:75%;
+    padding-bottom:1vw;
+    border-radius:1vw;
+    padding-top:1vw;
+    overflow: hidden;
+    page-break-inside: avoid;
+    justify-self:center;
+    color:white;
+    border: solid 0.2vw black;
+}
+
+.applicationForm {
+    background: white;
+    padding: 2.5vw;
+    border-radius: 0.8vw;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.applicationTitle {
+    text-align: center;
+    margin-bottom: 2.5vw;
+    height:max-content;
+    font-size: 3vw;
+    margin-top:1vw;
+
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display:inline-block;
+    font-weight:bold;
+    width:75%;
+    text-align: center;
+    margin-bottom:0.5vw;
+    font-size: 1.5vw;
+}
+
+form input,
+form textarea,
+form select {
+    width: 75%;
+    padding: 0.6vw;
+    box-sizing: border-box;
+    border: 0.1vw solid #ccc;
+    border-radius: 0.4vw;
+    font-size:1.3vw;
+    font-family:'Domino', 'Merriweather sans', Arial, Helvetica, sans-serif;
+    margin-bottom:1.2vw;
+}
+
+form input,
+form select {
+    text-align:center;
+}
+
+form button {
+    margin-top: 2vw;
+    padding: 1vw 3vw;
+    background-color: rgb(118, 164, 239);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+    color 0.15s;
+    font-size: 1.5vw;
+}
+
+form button:hover,
+form button:active {
+    background-color: white;
+    color:rgb(66, 107, 202);
+}
+
+.actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    background-color: rgb(66, 107, 202);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.actions button:hover,
+.actions button:active {
+    background-color: rgb(118, 164, 239);
+    border:solid black 1vw;
+}
+
+#responseMessage {
+    margin-top: 15px;
+    color: green;
+}
+
+@media print {
+    * {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    button {
+      display: none;
+    }
+  }

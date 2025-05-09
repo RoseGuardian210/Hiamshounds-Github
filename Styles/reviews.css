@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+}
+
+.review-box {
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    align-items: center;
+    height:40vw;
+    margin-top:5vw;
+    justify-content: center;
+}
+
+.review-container {
+    max-width:60%;
+    max-height:max-content;
+    position:relative;
+    margin-top:70px;
+    display:flex;
+    flex-direction: column;
+    font-family:Lucida Sans;
+}
+
+.number-text {
+    display:flex;
+    flex-direction: row;
+}
+
+.reviewNumber {
+    font-size:1vw;
+    display:inline-block;
+    font-family:Impact;
+    padding-left:1%;
+    padding-top:1%;
+}
+
+.text {
+    color: black;
+    font-size:2vw;
+    padding: 8px 12px;
+    position:static;
+    display:inline-block;
+    text-align: center;
+    line-height: 2vw;
+    flex:1;
+    align-self:center;
+    margin-right:24px;
+    margin-bottom:10px;
+}
+
+.review-source {
+    font-size:1.3vw;
+}
+
+.myReview {
+    top:-6vw;
+    display:none;
+    max-height: auto;
+    position: relative;
+    width:100%;
+    border:solid;
+    border-width:1.1vw;
+    border-radius: 10px;
+    border-color:rgb(118, 164, 239);
+    background-color:rgba(235, 235, 235, 0.8);
+    
+}
+
+.review-paragraph {
+    font-size:1.5vw;
+    text-align: center;
+    display:inline-block;
+    align-self:center;
+    margin:0;
+    font-family: Poetsen One, impact;
+    -webkit-text-stroke-width: thin;
+    -webkit-text-stroke-color: white;
+    padding:0 1%;
+}
+
+.review-5 {
+    font-size:3vw;
+}
+
+.stars-container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rating-star {
+    max-width:30%;
+    height:auto;
+    display:block;
+    position:relative;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+.previousReview,
+.nextReview {
+    cursor:pointer;
+    position:absolute;
+    display:inline-block;
+    width:auto;
+    padding:1% 1%;
+    color:rgba(16, 54, 143, 0.8);
+    font-weight:bold;
+    font-size:5vw;
+    transition: 0.6s ease;
+    user-select: none;
+    align-self:center;
+}
+
+.previousReview {
+    left:0;
+}
+
+.nextReview {
+    right:0;
+}
+
+.previousReview:hover,
+.nextReview:hover {
+    background-color:rgb(43, 85, 183);
+    color:white;
+}
+
+.slide {
+    animation-name: slide;
+    animation-duration: 1.5s;
+} 
+
+@keyframes slide {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media only screen and (min-width:500px) and (max-width:1024px) {
+    .review-box {
+        height:68vw;
+    }
+    
+    .review-container {
+        max-width:70%;
+    }
+    .review-paragraph,
+    .review-source,
+    .reviewNumber {
+        font-size:2.5vw;
+    }
+    .review-5 {
+        font-size:3.5vw;
+    }
+    .text {
+        font-size:4vw;
+        line-height:3vw;
+    }
+    .rating-star {
+        width:24vw;
+    }
+    .previousReview,
+    .nextReview {
+        font-size:7vw;
+    }
+}
+
+@media only screen and (min-width:300px) and (max-width:499.99px) {
+    .review-box {
+        height:105vw;;
+    }
+    .review-container {
+        max-width:70%;
+    }
+    .review-paragraph,
+    .review-source,
+    .reviewNumber {
+        font-size:3vw;
+    }
+    .review-5 {
+        font-size:4vw;
+    }
+    .text {
+        font-size:4.5vw;
+        line-height:3vw;
+    }
+    .rating-star {
+        width:24vw;
+    }
+    .previousReview, 
+    .nextReview {
+        font-size:7vw;
+    }
+}
