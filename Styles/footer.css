@@ -123,6 +123,7 @@ footer {
         position:absolute;
         align-items: center ;
         height:5.5vw;
+        top:2vw;
     }
     .email {
         margin:0px;

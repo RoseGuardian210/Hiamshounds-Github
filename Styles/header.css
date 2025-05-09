@@ -93,20 +93,20 @@ header ul li ul li ul {
         width:101%;
         justify-content: center;
         left:-1%;
-        height:150px;
+        height:19vw;
         
     }
     header .logo {
-        width:14.5vw;
-        height:7.6vw;
+        width:32.5vw;
+        height:17vw;
         position:relative;
         display:inline-block;
         left:0;
     }
     header nav {
         position: absolute;
-        width:33%;
-        top:9vw;
+        width:45%;
+        top:19vw;
         right:-4%;
         background: rgb(66, 107, 202);
         display:none;
@@ -158,6 +158,7 @@ header ul li ul li ul {
         margin-right:2vw;
         right:0;
         z-index: 9999;
+        bottom:1vw;
     }
     .menuToggle::before {
         content: '';
@@ -197,11 +198,5 @@ header ul li ul li ul {
     header ul li a {
         font-size:14px;
         padding:7px 10px;
-    }
-}
-
-@media (max-width:540px) {
-    header nav {
-        width:42%;
     }
 }
