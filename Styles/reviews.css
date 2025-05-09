@@ -137,7 +137,7 @@
     to {opacity: 1}
 }
 
-@media only screen and (min-width:500px) and (max-width:1100px) {
+@media only screen and (min-width:300px) and (max-width:1100px) {
     .review-box {
         height:140vw;
         padding-bottom:10vw;
@@ -164,34 +164,6 @@
         width:24vw;
     }
     .previousReview,
-    .nextReview {
-        font-size:7vw;
-    }
-}
-
-@media only screen and (min-width:300px) and (max-width:499.99px) {
-    .review-box {
-        height:105vw;;
-    }
-    .review-container {
-        max-width:70%;
-    }
-    .review-paragraph,
-    .review-source,
-    .reviewNumber {
-        font-size:3vw;
-    }
-    .review-5 {
-        font-size:4vw;
-    }
-    .text {
-        font-size:4.5vw;
-        line-height:3vw;
-    }
-    .rating-star {
-        width:24vw;
-    }
-    .previousReview, 
     .nextReview {
         font-size:7vw;
     }
