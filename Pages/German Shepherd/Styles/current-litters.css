@@ -34,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     flex:1;
+    position: relative;
 }
 
 .img-div {
@@ -101,7 +102,7 @@
 img {
     width:100%;
     height:auto;
-    transition:transform 0.3s ease;
+    transition:transform 0.4s ease, opacity 0.15s ease;
     cursor:pointer;
     border-radius:0.5vw;
 }
@@ -278,7 +279,7 @@ img {
 .not-Avaible {
     display:block; 
     justify-self:center; 
-    color:darkred;
+    color:rgb(255, 112, 112);
     display:block;
 }
 
@@ -437,13 +438,20 @@ img {
   .litter-info span {
     font-size:clamp(14.5px, 2vw, 30px);
   }
+  img {
+    transition: transform 0.4s ease, top 0.4s ease, left 0.4s ease, opacity 0.4s ease;
+}
   .enlarged {
     position: fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%, -50%) scale(1);
-    max-width:90vw;
-    max-height:90vh;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        max-width: 90vw;
+        max-height: 90vh;
+        z-index: 1000;
+        opacity: 1;
+        border-radius: 1vw;
+        border: solid 0.2vw black;
   }
 }
 
