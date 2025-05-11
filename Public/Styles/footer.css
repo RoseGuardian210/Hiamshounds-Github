@@ -1,0 +1,222 @@
+footer {
+    padding:0 2vw;
+    background-color:rgb(66, 107, 202);
+    width:105%;
+    bottom:0;
+    height:7vw;
+    position: relative;
+    left:-2.5vw;
+}
+.footer-div {
+    display:flex;
+    position:relative;
+    flex-direction: column;
+    align-self: center;
+    height:100%;
+    bottom:-50%;
+    z-index: 123;
+    vertical-align: middle;
+}
+.footerPrev,
+.footerNext {
+    display:none;
+    color:white;
+    text-decoration: none;
+    cursor:pointer;
+    padding:1vw 1.5vw;
+    position:absolute;
+    font-size:5vw;
+    text-align: center;
+    z-index: 999;
+    bottom:21vw;
+    transition: 0.6s ease;
+}
+.footerPrev:hover,
+.footerNext:hover {
+    background-color:white;
+    color:rgb(66, 107, 202);
+}
+.footerPrev {
+    right:90%;
+}
+.footerNext {
+    left:90%;
+}
+
+.rail {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height:1vw;
+}
+
+.address-p,
+.telephone-p,
+.facebook-p,
+.email {
+    display:block;
+    color:white;
+    font-size:0.9vw;
+    text-align: center;
+    margin:0;
+    margin-top:0.5vw;
+    padding:0;
+    line-height:0.2vw;
+    max-width:100%;
+}
+
+.mail-a,
+.whatsapp-number {
+    color:white;
+    cursor:pointer;
+    text-decoration-color:white;
+    text-decoration-thickness: 0.1vw;
+    
+}
+
+.address-p {
+    margin-top:0.65vw;
+}
+
+.location-logo,
+.whatsapp-logo,
+.facebook-logo,
+.email-logo {
+    max-width:100%;
+    height:auto;
+    align-self: center;
+    cursor:pointer;
+    margin-top:1vw;
+    width:3vw;
+    flex:1;
+    object-fit:contain;
+}
+
+.footer-div {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:2.9vw;
+}
+
+/* mobile-tablet */
+
+
+@media only screen and (max-width:1100px) {
+    footer {
+        height:13vw;
+        width:105%;
+        left:-2vw;
+    }
+    .footer-container {
+        overflow:hidden;
+        width:100%;
+        height:100%;
+        position:relative;
+        align-items: center;
+    }
+    .rail {
+        width:400%;
+        position:absolute;
+        align-items: center ;
+        height:5.5vw;
+        top:2vw;
+    }
+    .email {
+        margin:0px;
+    }
+    .footer-div {
+        width:100%;
+        float:left;
+        align-items: center;
+    }
+    .whatsapp-number {
+        width:min-content;
+    }
+    .footerPrev,
+    .footerNext {
+        display: inline-block;
+        position: absolute;
+        bottom:-2vw;
+        transform: translateY(-50%);
+        text-align: center;
+        color: white;
+        z-index: 9999;
+        user-select: none;
+        text-decoration: none;
+        padding: 0;
+        height:min-content;
+        width:min-content;
+    }
+    .footerPrev {
+        left:4vw;
+    }
+    .footerNext {
+        left:92vw;
+    }
+    .address-p,
+    .telephone-p,
+    .facebook-p,
+    .email {
+        font-size:14px;
+        max-width:100%;
+        margin-top:-1vw;
+    }
+    .location-logo,
+    .whatsapp-logo,
+    .facebook-logo,
+    .email-logo {
+        width:6vw;
+        max-width:100%;
+        height:auto;
+        align-self: center;
+        cursor:pointer;
+        position:relative;
+        padding-top:0.4%;
+        margin:1vw 0 0 0;
+        top:1vw;
+    }
+    .mail-a,
+    .whatsapp-number {
+    text-decoration-thickness: 0.2vw;
+    }
+}
+
+@media only screen and (max-width:419.9px) {
+    footer {
+        height:100px;
+    }
+    .rail {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 400%;
+    height:85px;
+  }
+
+  .footer-div {
+    width: 100%;
+    height: auto;
+    top: 0;
+    padding: 1em 0;
+  }
+
+  .address-p,
+  .telephone-p,
+  .facebook-p,
+  .email {
+    font-size: 14px;
+    line-height: 1.2em;
+    white-space: normal; /* allow wrapping */
+    word-break: break-word;
+    text-align: center;
+    width: 100%;
+    margin: 0.5em auto;
+    padding: 0 5vw;
+  }
+  .footerPrev,
+  .footerNext {
+    bottom:20%;
+  }
+}
