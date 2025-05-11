@@ -96,7 +96,7 @@ main {
 .disclaimer-info-container h3 {
     text-align:center;
     margin-bottom:3%;
-    font-size:clamp(10px, 2vw, 35px);
+    font-size:clamp(5px, 2vw, 35px);
     font-weight:400;
 }
 
