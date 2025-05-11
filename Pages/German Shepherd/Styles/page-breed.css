@@ -83,4 +83,16 @@ main {
         padding-top:28vw;
         background-position-x:60%;
     }
+    .information-container {
+        width:100%;
+        flex-direction: column;
+        gap:1.5vw;
+    }
+    .image- {
+        max-height:40vw;
+    }
+    .paragraph {
+        font-size:14px !important;
+        padding:1vw;
+    }
 }
