@@ -40,3 +40,25 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+
+// no puppies button movement
+
+function moveButton() {
+    const buttonLink = document.querySelector('.EnquireBTN')?.parentElement;
+    const noPuppiesContainer = document.querySelector('.no-puppies');
+    const imgContainer = document.querySelector('.noPups-imgContainer');
+
+    if (!buttonLink || !noPuppiesContainer || !imgContainer) return;
+
+    const isMobileOrTablet = window.matchMedia("(max-width: 1100px)").matches;
+
+    if (isMobileOrTablet && buttonLink.parentElement === imgContainer) {
+      noPuppiesContainer.insertBefore(buttonLink, noPuppiesContainer.firstChild);
+    } else if (!isMobileOrTablet && buttonLink.parentElement === noPuppiesContainer) {
+      imgContainer.appendChild(buttonLink);
+    }
+  }
+
+  window.addEventListener('DOMContentLoaded', moveButton);
+  window.addEventListener('resize', moveButton);

@@ -73,6 +73,9 @@
         </nav>
       </header>
 
+    <div class="page-wrapper">
+      <main>
+
    <!-- information -->
 
    <h1 class="page-title" id="current-litters-title">
@@ -81,7 +84,7 @@
 
     <!-- No litters avaible -->
 
-   <!-- <div class="no-puppies" style="display:flex;" role="region" aria-labelledby="current-litters-title">
+   <div class="no-puppies" style="display:flex;" role="region" aria-labelledby="current-litters-title">
     <div class="text-container">
         <p class="text">
             We don't have any puppies available at the moment. However, please feel
@@ -99,7 +102,7 @@
             <button class="EnquireBTN" aria-label="Enquire about upcoming litters">Enquire Here</button>
         </a>
     </div>
-   </div> -->
+   </div>
     
    <!-- avaible litters -->
 
@@ -126,7 +129,7 @@
         </div>
     </div>
     <div class="puppy-button-container">
-        <p style="display:inline-block; align-self:center; font-size:1.8vw; margin-right:2%; font-family:'Roboto">
+        <p style="display:inline-block; align-self:center; font-size:clamp(14px, 1.8vw, 25px); margin-right:2%; font-family:'Roboto">
             If you would like to see puppies click here &#x2192; </p>
         <button id="litter-btn1" 
         class="toggle-btn" 
@@ -140,86 +143,87 @@
     </div>
     <div class="puppies-section" id="puppies-1" role="region" aria-labelledby="litter-btn1" style="display:none;">
         <h1 class="pups-title">Puppies in Litter</h1>
-        <h2 class="Dogs">Dogs</h2>
-        <h2 class="Bitches">Bitches</h2>
         <div class="litter-puppies">
-            <div class="puppies-boys">
-                <div class="puppy" role="group" aria-labelledby="puppy1-name">
-                    <img src="../../Images/Puppies/Giros puppies/Fernando.webp" alt="Gorgeous German Shepherd puppy boy trying to say how happy he is.">
-                    <h3 id="puppy1-name">HiamsHounds Fernando <br>
+            <div class="gender">
+                <h2 class="Dogs">Dogs</h2>
+                <div class="puppies-boys">
+                    <div class="puppy" role="group" aria-labelledby="puppy1-name">
+                        <img src="../../Images/Puppies/Giros puppies/Fernando.webp" alt="Gorgeous German Shepherd puppy boy trying to say how happy he is.">
+                        <h3 id="puppy1-name">HiamsHounds Fernando <br>
                         <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
                         <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
                         </h3>
-                </div>
-                <div class="puppy" role="group" aria-labelledby="puppy2-name">
-                    <img src="../../Images/Puppies/Giros puppies/Super Trouper.webp" alt="Gorgeous German Shepherd puppy boy.">
-                    <h3 id="puppy2-name"> Hiamshounds Super Trouper <br>
-                        <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
-                        <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
-                    </h3>
-                </div>
-                <div style="display:block" class="puppy" role="group" aria-labelledby="puppy3-name">
-                    <img src="../../Images/Puppies/Giros puppies/Andante.webp" alt="Cheeky German Shepherd puppy boy showing his cute tongue.">
-                    <h3 id="puppy3-name">Hiamshounds Andante <br>
-                        <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
-                        <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
-                    </h3>
+                    </div>
+                    
+                    <div class="puppy" role="group" aria-labelledby="puppy2-name">
+                        <img src="../../Images/Puppies/Giros puppies/Super Trouper.webp" alt="Gorgeous German Shepherd puppy boy.">
+                        <h3 id="puppy2-name"> Hiamshounds Super Trouper <br>
+                            <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
+                            <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
+                        </h3>
+                    </div>
+                    
+                    <div style="display:block" class="puppy" role="group" aria-labelledby="puppy3-name">
+                        <img src="../../Images/Puppies/Giros puppies/Andante.webp" alt="Cheeky German Shepherd puppy boy showing his cute tongue.">
+                        <h3 id="puppy3-name">Hiamshounds Andante <br>
+                            <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
+                            <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
+                        </h3>
+                    </div>
                 </div>
             </div>
-            <div class="puppies-girls">
-
                 
-
-                <div style="display:block" class="puppy" role="group" aria-labelledby="puppy4-name">
-                    <img src="../../Images/Puppies/Giros puppies/Voulez Vouz.webp" alt="Adorable German Shepherd puppy girl.">
-                    <h3 id="puppy4-name">Hiamshounds Voulez Vouz <br>
-                        <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
-                        <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
-                    </h3>
-                </div>
-                <div class="puppy" role="group" aria-labelledby="puppy5-name">
-                    <img src="../../Images/Puppies/Giros puppies/Mama Mia.webp" alt="Adorable German Shepherd puppy girl.">
-                    <h3 id="puppy5-name">Hiamshounds Mama Mia <br>
-                        <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
-                        <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
-                    </h3>
-                </div>
-                <div class="puppy" role="group" aria-labelledby="puppy6-name">
-                    <img src="../../Images/Puppies/Giros puppies/Angeleyes.webp" alt="Adorable German Shepherd puppy girl showing her tongue to camera.">
-                    <h3 id="puppy6-name">Hiamshounds Angeleyes <br>
-                        <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
-                        <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
-                    </h3>
-                </div>
-
-                
-
-                <div class="puppy" role="group" aria-labelledby="puppy7-name">
-                    <img src="../../Images/Puppies/Giros puppies/Dancing Queen.webp" alt="Adorable German Shepherd puppy girl.">
-                    <h3 id="puppy7-name">Hiamshounds dancing queen <br>
-                        <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
-                        <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
-                    </h3>
-                </div>
-                <div class="puppy" role="group" aria-labelledby="puppy8-name">
-                    <img src="../../Images/Puppies/Giros puppies/Chiquitita.webp" alt="Adorable German Shepherd puppy girl.">
-                    <h3 id="puppy8-name">Hiamshounds Chiquitita <br>
-                        <span class="pups-avaible" role="status" aria-live="polite" style="display:block !important;">(Avaible)</span>
-                        <span class="not-Avaible" style="display:none" role="status" aria-live="polite">(Reserved)</span>
-                    </h3>
-                </div>
-                <div class="puppy" role="group" aria-labelledby="puppy9-name">
-                    <img src="../../Images/Puppies/Giros puppies/My love my life.webp" alt="Adorable German Shepherd puppy girl.">
-                    <h3 id="puppy9-name">hiamshounds My love my life <br>
-                        <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
-                        <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
-                    </h3>
+            <div class="gender">
+                <h2 class="Bitches">Bitches</h2>
+                <div class="puppies-girls">
+                    <div style="display:block" class="puppy" role="group" aria-labelledby="puppy4-name">
+                        <img src="../../Images/Puppies/Giros puppies/Voulez Vouz.webp" alt="Adorable German Shepherd puppy girl.">
+                        <h3 id="puppy4-name">Hiamshounds Voulez Vouz <br>
+                            <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
+                            <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
+                        </h3>
+                    </div>
+                    <div class="puppy" role="group" aria-labelledby="puppy5-name">
+                        <img src="../../Images/Puppies/Giros puppies/Mama Mia.webp" alt="Adorable German Shepherd puppy girl.">
+                        <h3 id="puppy5-name">Hiamshounds Mama Mia <br>
+                            <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
+                            <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
+                        </h3>
+                    </div>
+                    <div class="puppy" role="group" aria-labelledby="puppy6-name">
+                        <img src="../../Images/Puppies/Giros puppies/Angeleyes.webp" alt="Adorable German Shepherd puppy girl showing her tongue to camera.">
+                        <h3 id="puppy6-name">Hiamshounds Angeleyes <br>
+                            <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
+                            <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
+                        </h3>
+                    </div>
+                    <div class="puppy" role="group" aria-labelledby="puppy7-name">
+                        <img src="../../Images/Puppies/Giros puppies/Dancing Queen.webp" alt="Adorable German Shepherd puppy girl.">
+                        <h3 id="puppy7-name">Hiamshounds dancing queen <br>
+                            <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
+                            <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
+                        </h3>
+                    </div>
+                    <div class="puppy" role="group" aria-labelledby="puppy8-name">
+                        <img src="../../Images/Puppies/Giros puppies/Chiquitita.webp" alt="Adorable German Shepherd puppy girl.">
+                        <h3 id="puppy8-name">Hiamshounds Chiquitita <br>
+                            <span class="pups-avaible" role="status" aria-live="polite" style="display:block !important;">(Avaible)</span>
+                            <span class="not-Avaible" style="display:none" role="status" aria-live="polite">(Reserved)</span>
+                        </h3>
+                    </div>
+                    <div class="puppy" role="group" aria-labelledby="puppy9-name">
+                        <img src="../../Images/Puppies/Giros puppies/My love my life.webp" alt="Adorable German Shepherd puppy girl.">
+                        <h3 id="puppy9-name">hiamshounds My love my life <br>
+                            <span class="pups-avaible" role="status" aria-live="polite">(Avaible)</span>
+                            <span class="not-Avaible" role="status" aria-live="polite">(Reserved)</span>
+                        </h3>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
         <button id="litter-info-btn1" class="toggle-btn" data-target="#litter-info-1" style="display:flex; margin-top:10%; justify-self: center;">
-            Click Here For More Info <span class="arrow-icon" style="font-size:1.6vw; display:inline-block;">&#9660;</span>
+            Click Here For More Info <span class="arrow-icon">&#9660;</span>
         </button>
         <div id="litter-info-1" class="litter-info-container" style="display:none;">
             <h2 style="text-align:center; margin-bottom:3%;">Litter Information</h2>
@@ -250,9 +254,9 @@
              performed well in exhibitions. Hips A, elbows 0. Grandparents include the 
              famous WILLY VOM KUCKUCKSLAND, LULU VON BISCHOF METZGER, ETO VOM HEERBUSCH 
              & HARLEY VON DER BERGHOFER-HEIDE. <br><br>
-             <span style="font-size:1.8vw;">Puppies available: 2 Black & tan girls Viewings can be made in person 
+             <span>Puppies available: 2 Black & tan girls Viewings can be made in person 
             or via WhatsApp video call.</span> <br>
-            <span style="font-size:1.8vw; text-decoration: underline black 0.2vw; font-weight:bold;">£1800 each <br>£400 non-refundable deposits</span>
+            <span style="text-decoration: underline black 0.2vw; font-weight:bold;">£1800 each <br>£400 non-refundable deposits</span>
             </p>
         </div>
     </div>
@@ -261,7 +265,7 @@
     <!-- Disclaimer -->
 
     <div class="disclaimer">
-        <div class="disclaimer-info-container" style="margin-right:10%;">
+        <div class="disclaimer-info-container">
             <p>All of our puppies are:</p>    
             <ul>
                 <li>&#9989; Vet Checked</li>
@@ -288,7 +292,7 @@
         </div>
     </div>
 
-
+    </main>
    <!-- footer -->
 
    <footer role="contentinfo">
@@ -357,7 +361,7 @@
     <a class="footerNext" role="button" aria-label="Next slide" tabindex="0">&gt;</a>
     </div>
 </footer>
-
+</div>
 </body>
 
 <script src="../../Scripts/jquery-3.7.1.min.js"></script>
