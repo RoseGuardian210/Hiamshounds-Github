@@ -162,8 +162,7 @@ footer {
     .facebook-p,
     .email {
         font-size:clamp(14px, 2.4vw, 30px);
-        max-width:100%;
-        margin-top:-1vw;
+        max-width:80%;
     }
     .location-logo,
     .whatsapp-logo,
@@ -185,7 +184,7 @@ footer {
     }
 }
 
-@media only screen and (max-width:419.9px) {
+@media only screen and (max-width:530px) {
     footer {
         height:100px;
     }

@@ -7,7 +7,7 @@
     justify-self: center;
     display:flex;
     flex-direction:row;
-    background-color: rgba(66, 107, 202, 0.8);
+    background-color: rgba(66, 107, 202, 0.7);
     padding: 2vw;
     margin-bottom:20%;
     border-radius:1vw;
@@ -84,7 +84,7 @@
     flex-direction: column;
     width:75%;
     justify-self:center;
-    background-color: rgba(66, 107, 202, 0.8);
+    background-color: rgba(66, 107, 202, 0.7);
     padding: 2vw;
     border-radius:1vw;
     border: solid 0.2vw black;
@@ -395,6 +395,9 @@ img {
         opacity: 1;
         border-radius: 1vw;
         border: solid 0.2vw black;
+  }
+  .litter-info {
+    line-height: clamp(20px, 3.2vw, 60px);
   }
 }
 
