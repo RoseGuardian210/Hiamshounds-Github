@@ -22,7 +22,7 @@
 .text {
     display:inline-block;
     margin-right:1vw;
-    font-size:clamp(16px, 1.75vw, 30px);
+    font-size:clamp(14px, 1.75vw, 30px);
     line-height:200%;
     text-align: center;
     align-self: center;
@@ -65,7 +65,7 @@
     background-color: rgb(118, 164, 239);
     color:white;
     border-radius:0.5vw;
-    font-size:clamp(14px, 1.3vw, 25px);
+    font-size:clamp(14px, 1.75vw, 25px);
     padding: 1vw 4vw;
     transition: background-color 0.15s,
     color 0.15s;
@@ -132,7 +132,7 @@ img {
 }
 
 .name {
-    font-size:clamp(16px, 2.7vw, 40px);
+    font-size:clamp(16px, 2.2vw, 35px);
     margin-top:1vw;
     width:100%;
     max-width:fit-content;
@@ -151,7 +151,7 @@ img {
 .born {
     display:inline-block;
     text-align:center;
-    font-size:clamp(16px,2.5vw,35px);
+    font-size:clamp(16px,2.2vw,35px);
     font-family:'Roboto'
 }
 
@@ -161,38 +161,8 @@ img {
     margin-top:7%;
 }
 
-.puppies-btn {
-    padding: 1vw 2vw;
-    font-size:clamp(14px, 1.75, 25px);
-    max-width:fit-content;
-    align-self:center;
-    color:white;
-    background-color: rgb(118, 164, 239);
-    border:none;
-    border-radius: 0.6vw;
-    cursor:pointer;
-    transition: background-color 0.15s, color 0.15s;
-}
-
-.puppies-btn:active,
-.puppies-btn:hover {
-    background-color:white;
-    color:rgb(118, 164, 239);
-}
-
-.arrow-icon {
-    font-size:clamp(14px, 1.6vw, 22px); 
-    display:inline-block;
-}
-
-.rotated {
-    transform: rotate(180deg);
-    transition: transform 0.5s ease;
-}
-
-.rotating {
-    transform: rotate(360deg);
-    transition: transform 0.5s ease;
+.puppy-button-container p {
+    font-size:clamp(14px, 1.75vw, 30px);
 }
 
 .puppies-section {
@@ -201,9 +171,9 @@ img {
     flex-direction: column;
 }
 
-.pups-title {
+#puppies-heading {
     text-align: center;
-    font-size:clamp(20px, 2vw, 35px);
+    font-size:clamp(22px, 3vw, 40px);
     margin-bottom:5%;
     font-family: 'Roboto';
 }
@@ -235,7 +205,7 @@ img {
 .Dogs,
 .Bitches {
     display:inline-block;
-    font-size:clamp(16px, 2vw, 30px);
+    font-size:clamp(18px, 2.8vw, 30px);
     font-family: 'Roboto';
     max-width:fit-content;
     max-height:fit-content;
@@ -258,7 +228,7 @@ img {
 }
 
 .puppy h3 {
-    font-size:clamp(14px, 2vw, 25px); 
+    font-size:clamp(16px, 2.2vw, 30px); 
     text-transform: uppercase; 
     text-align: center;
     display:inline-block;
@@ -294,25 +264,29 @@ img {
     padding-top:4vw;
     width:90%;
     align-self: center;
-    font-size:1.4vw;
     text-align: center;
 }
 
 .litter-info-container h2 {
     font-family:'Merriweather Sans', Arial, Helvetica, sans-serif;
+    font-size:clamp(20px, 3vw, 40px);
 }
 
 .litter-info {
     font-family:'Merriweather Sans', Arial, Helvetica, sans-serif;
     text-align:center;
     line-height: 3vw;
-    font-size:1.7vw;
+    font-size:clamp(14px, 1.75vw, 30px);
+}
+
+.litter-info span {
+    font-size:clamp(16px, 2.4vw, 35px);
 }
 
 .toggle-btn {
     margin-top:5%;
     padding: 1vw 1.8vw;
-    font-size:clamp(14px, 1.75, 25px);
+    font-size:clamp(14px, 1.75vw, 25px);
     max-width:fit-content;
     align-self:center;
     color:white;
@@ -321,6 +295,21 @@ img {
     border-radius: 0.6vw;
     cursor:pointer;
     transition: background-color 0.15s, color 0.15s;
+}
+
+.arrow-icon {
+    font-size:clamp(14px, 1.7vw, 22px); 
+    display:inline-block;
+}
+
+.rotated {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease;
+}
+
+.rotating {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
 }
 
 #litter-btn1 {
@@ -333,36 +322,6 @@ img {
     color:rgb(118, 164, 239);
 }
 
-
-/* Disclaimer */
-
-.disclaimer {
-    display:flex;
-    flex-direction: row;
-    justify-self:center;
-    width:100%;
-    justify-content: space-between;
-    margin-bottom:8%;
-    background: rgba(255, 255, 255, 0.8);
-    padding:1.5vw;
-    border-radius: 0.5vw;
-    gap:3vw;
-}
-
-.disclaimer-info-container {
-    flex:1;
-}
-
-.disclaimer-info-container p {
-    text-align:center;
-    margin-bottom:3%;
-    font-size:clamp(16px, 2vw, 30px);
-}
-
-.disclaimer-info-container ul li {
-    list-style: none;
-    font-size:clamp(13px, 2vw, 30px);
-}
 
 @keyframes flashy-border {
     0% { border-color: rgb(255, 255, 255); }
@@ -415,28 +374,12 @@ img {
         display:inline-block;
         align-self:center;
     }
-    .no-puppies .text-container .text {
-        font-size:16px;
-    }
-    .EnquireBTN {
-    font-size:14px;
-  }
   .litter {
     width:90%;
   }
   .puppy {
     width:fit-content;
     padding:2vw 2vw;
-  }
-  .litter-info-container h2 {
-    font-size:clamp(16px, 2vw, 30px);
-  }
-  .litter-info {
-    font-size:clamp(13px, 2vw, 30px);
-    line-height: clamp(20px, 4vw, 60px);
-  }
-  .litter-info span {
-    font-size:clamp(14.5px, 2vw, 30px);
   }
   img {
     transition: transform 0.4s ease, top 0.4s ease, left 0.4s ease, opacity 0.4s ease;

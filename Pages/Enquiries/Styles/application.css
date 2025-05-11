@@ -1,7 +1,4 @@
-#pdfContent, #pdfContent * {
-    font-family: 'Arial', sans-serif !important;
-    line-height: 1.5vw;
-  }
+
 
 #pdfContent {
     background-color: rgb(66, 107, 202);
@@ -30,7 +27,7 @@
     text-align: center;
     margin-bottom: 2.5vw;
     height:max-content;
-    font-size: 3vw;
+    font-size: clamp(22px, 3.5vw, 45px);
     margin-top:1vw;
 
 }
@@ -42,12 +39,13 @@ form {
 }
 
 form label {
-    display:inline-block;
-    font-weight:bold;
+    display:block;
+    font-weight:500;
     width:75%;
     text-align: center;
-    margin-bottom:0.5vw;
-    font-size: 1.5vw;
+    margin-bottom:1.5vw;
+    font-size: clamp(16px, 2.2vw, 35px);
+    line-height: clamp(1.4em, 2vw, 2em)
 }
 
 form input,
@@ -58,7 +56,7 @@ form select {
     box-sizing: border-box;
     border: 0.1vw solid #ccc;
     border-radius: 0.4vw;
-    font-size:1.3vw;
+    font-size:clamp(14px, 1.75vw, 30px);
     font-family:'Domino', 'Merriweather sans', Arial, Helvetica, sans-serif;
     margin-bottom:1.2vw;
 }
@@ -78,7 +76,7 @@ form button {
     cursor: pointer;
     transition: background-color 0.15s,
     color 0.15s;
-    font-size: 1.5vw;
+    font-size: clamp(14px, 1.75vw, 25px);
 }
 
 form button:hover,
@@ -111,6 +109,7 @@ form button:active {
 #responseMessage {
     margin-top: 15px;
     color: green;
+    font-size:clamp(18px, 3vw, 45px);
 }
 
 @media print {

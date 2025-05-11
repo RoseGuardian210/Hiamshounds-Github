@@ -74,7 +74,8 @@
       </header>
 
    <!-- information -->
-<main role="main" aria-labelledby="page-title">
+    <div class="page-wrapper">
+        <main role="main" aria-labelledby="page-title">
 
 
     <h1 id="page-title" class="page-title">Upcoming Litters<br>
@@ -82,13 +83,15 @@
     </h1>
 
 <!-- No litters planned -->
-   
 
-    <div class="no-litters" style="display:flex;" role="region" aria-labelledby="no-litters-status">
+
+    <div class="no-litters" role="region" aria-labelledby="no-litters-status">
         <div class="text-container" id="no-litters-status">
+            <p class="text" id="noLitters-heading">
+            We currently do not have any upcoming Miniature Schnauzer litters at this time.
+            </p>
             <p class="text">
-                We currently do not have any planned Miniature Schnauzer litters at 
-                this time. We take pride in raising happy, healthy puppies and carefully 
+                We take pride in raising happy, healthy puppies and carefully 
                 plan each litter to ensure the best start in life. Please check back soon 
                 for updates or reach out if you'd like to be notified when a future 
                 litter is expected.
@@ -107,7 +110,7 @@
 
     <!-- Upcoming Litters -->
 
-    <div class="upcoming-litters" style="display:none;" role="region" aria-label="upcoming-litters-information">
+    <!-- <div class="upcoming-litters" role="region" aria-label="upcoming-litters-information">
         <div class="dam-sire" aria-label="Parent dogs: Dam and Sire">
             <p>Dam</p>
             <p>Sire</p>
@@ -139,15 +142,15 @@
     <button class="enquirebtn" aria-label="Click to enquire about puppies">
         Click here to enquire
     </button>
-</a>
+</a> -->
     
 
 <!-- Disclaimer -->
 
 
 <div class="disclaimer" role="region" aria-label="disclaimer">
-    <div class="disclaimer-info-container" style="margin-right:10%;">
-        <p>All of our puppies are:</p>    
+    <div class="disclaimer-info-container">
+        <h3>All of our puppies are:</h3>    
         <ul>
             <li>&#9989; Vet Checked</li>
             <li>&#9989; Routinely flead every 2 weeks</li>
@@ -159,7 +162,7 @@
         </ul>
     </div>
     <div class="disclaimer-info-container">
-        <p>They come with a puppy pack containing:</p>
+        <h3>They come with a puppy pack containing:</h3>
         <ul>
             <li>&#9989; KC paperwork</li>
             <li>&#9989; Vet card</li>
@@ -245,10 +248,11 @@
     <a class="footerNext" role="button" aria-label="Next slide" tabindex="0">&gt;</a>
     </div>
 </footer>
-
+</div>
 </body>
 
 <script src="../../Scripts/jquery-3.7.1.min.js"></script>
 <script src="../../Scripts/scripts.js"></script>
+<script src="../../Scripts/upcoming-litters.js"></script>
 
 </html>
