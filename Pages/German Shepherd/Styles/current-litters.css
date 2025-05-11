@@ -285,7 +285,7 @@ img {
 .pups-avaible {
     display:none !important;
     justify-self:center; 
-    color:darkgreen;
+    color:rgb(158, 255, 158);
     display:block;
 }
 
@@ -432,6 +432,7 @@ img {
   }
   .litter-info {
     font-size:clamp(13px, 2vw, 30px);
+    line-height: clamp(20px, 4vw, 60px);
   }
   .litter-info span {
     font-size:clamp(14.5px, 2vw, 30px);
