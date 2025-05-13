@@ -101,19 +101,19 @@ main {
 }
 
 .disclaimer-info-container {
-    max-width:50%;
+    flex:1;
 }
 
 .disclaimer-info-container h3 {
     text-align:center;
     margin-bottom:3%;
-    font-size:clamp(16px, 2vw, 35px);
+    font-size:clamp(8px, 2.05vw, 35px);
+    font-weight:700;
 }
 
 .disclaimer-info-container ul li {
     list-style: none;
-    font-size:clamp(13px, 2vw, 30px);
-    margin-left:2vw;
+    font-size:clamp(7.5px, 1.75vw, 30px);
 }
 
 
