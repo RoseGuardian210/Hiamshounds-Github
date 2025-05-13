@@ -1,3 +1,9 @@
+html, body {
+    overscroll-behavior: none;
+    touch-action: manipulation;
+    overscroll-behavior-y: contain;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 11vw;
