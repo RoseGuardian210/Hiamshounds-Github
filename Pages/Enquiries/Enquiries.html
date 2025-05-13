@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="description" content="Enquiry form applying for a puppy or joining a waitting list.">
     <title>Hiams Hounds</title>
     <link rel="icon" href="../../Images/Logos/Title puppy.png" type="image/x-icon">
     <link rel="stylesheet" href="../../Styles/header.css">
@@ -112,32 +113,130 @@
             <label for="family">Do you have any children? If so, what are their ages? *</label>
             <input type="text" id="family" name="family" required aria-required="true">
           
-            <label for="progress">Are you Enquiring for a current 
-                litter or to be on a waiting list? *</label>
-            <select id="progress" name="progress" required>
+            <label for="interest">Are you Enquiring for a current 
+                litter, upcoming litter or to be on a waiting list? *</label>
+            <select id="interest" name="interest" required>
                 <option value="" disabled selected>Select One</option>
                 <option value="Current Litter">Current Litter</option>
-                <option value="Waiting List">Upcoming Litter</option>
-            </select>    
+                <option value="Upcoming Litter">Upcoming Litter</option>
+                <option value="Waiting List">Waiting List</option>
+            </select> 
+            
+            <!-- current litter -->
+            
+            <div id="litter-section" class="current-litter" style="display:none;">
+              <label class="current-litter">Which breed are you enquiring for? *</label>
+              <select id="puppy-breed" name="puppy-breed">
+                <option value="" disabled selected>Select Breed</option>
+                <option value="Miniature Schnauzer">Miniature Schnauzer</option>
+                <option value="German Shepherd">German Shepherd</option>
+              </select>
+            </div>
 
-            <label for="breed">Which breed are you enquiring for? *</label>
-            <select id="breed" name="breed" required aria-required="true">
-              <option value="" disabled selected>Select One</option>
-              <option value="German Shepherd">German Shepherd</option>
-              <option value="Miniature Schnauzer">Miniature Schnauzer</option>
-            </select>
+            <!-- If German Shepherds are selected  -->
+
+            <div id="puppies-shepherds" class="german-shepherdPUP" style="display:none">
+              <label for="whichPuppyGer">Which puppy would you like to enquire for? *</label>
+              <select id="whichPuppyGer" name="whichPuppyGer">
+                <option value="" disabled selected>Select gender or a puppy</option>
+                <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option>
+                <option value="Hiamshounds Voulez Vouz">Hiamshounds Voulez Vouz</option>
+                <option value="Hiamshounds Chiquitita">Hiamshounds Chiquitita</option>
+              </select>
+            </div>
+
+            <!-- If Miniature Schnauzers are selected -->
+
+            <div id="puppies-schnauzers" class="miniature-schnauzerPUP" style="display:none;">
+              <label for="whichPuppySCH">Which puppy would you like to enquire for? *</label>
+              <select id="whichPuppySCH" name="whichPuppySCH">
+                <option value="" disabled selected>Select gender or a puppy</option>
+                <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option>
+                <option value="Hiamshounds Mergina">Hiamshounds Mergina</option>
+              </select>
+            </div>
+            
+            <!-- upcoming litters -->
+
+            <div class="upcoming-breed" id="upcoming-litter-breed" style="display:none;">
+              <label for="breed-upcoming">Which breed are you enquiring for? *</label>
+              <select id="breed-upcoming" name="breed-upcoming">
+                <option value="" disabled selected>Select Breed</option>
+                <option value="German Shepherd">German Shepherd</option>
+                <!-- <option value="Miniature Schnauzer" disabled selected>Miniature Schnauzer</option> -->
+              </select>
+            </div>
+
+            <!-- Upcoming litter German Shepherds -->
+
+            <div class="upcomingGer" id="upcoming-Shepherds" style="display:none;">
+              <label for="litterShep-upcoming">Which litter would you like to choose from? *</label>
+              <select id="litterShep-upcoming" name="litterShep-upcoming">
+                <option value="" disabled selected>Select Litter</option>
+                <option value="READEPTER FLICKA DAY">READEPTER FLICKA DAY date:(13/06/25)</option>
+                <option value="LOUD MUNCHKINTON">LOUD MUNCHKINTON date:(20/06/25)</option>
+              </select>
+              
+              <label for="gender-upcomingGER">Gender preference? *</label>
+              <select id="gender-upcomingGER" name="gender-upcomingGER">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Any">No Preference</option>
+                <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option>
+              </select>
           
-            <label for="gender">Gender preference? *</label>
-            <select id="gender" name="gender" required aria-required="true">
-              <option value="" disabled selected>Select One</option>
-              <option value="Any">No Preference</option>
-              <option value="Dog">Dog</option>
-              <option value="Bitch">Bitch</option>
-            </select>
+              <label for="specificGER">Are you are intrested in a particular puppy or after
+                  any specific traits?</label>
+              <textarea id="specificGER" name="specificGER" rows="2"></textarea>
+            </div>
+
+            <!-- Upcoming litter Miniature Schnauzers -->
+
+            <!-- <div class="upcomingSCH" id="upcoming-Schnauzers" style="display:none;">
+              <label for="litterSCH-upcoming">Which litter would you like to choose from? *</label>
+              <select id="litterSCH-upcoming" name="litterSCH-upcoming">
+                <option value="" disabled selected>Select Litter</option>
+              </select>
+              
+              <label for="genderSCH">Gender preference? *</label>
+              <select id="genderSCH" name="genderSCH">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Any">No Preference</option>
+                <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option>
+              </select>
           
-            <label for="specific">Are you are intrested in a particular puppy or after
-                 any specific traits?</label>
-            <textarea id="specific" name="specific" rows="2"></textarea>
+              <label for="specificSCH">Are you are intrested in a particular puppy or after
+                  any specific traits?</label>
+              <textarea id="specificSCH" name="specificSCH" rows="2"></textarea>
+            </div> -->
+            
+            <!-- waiting list -->
+
+
+            <div id="waiting-section" class="waitting-list" style="display:none;">
+              <label for="breed-waiting">Which breed are you enquiring for? *</label>
+              <select id="breed-waiting" name="breed-waiting">
+                <option value="" disabled selected>Select Breed</option>
+                <option value="German Shepherd">German Shepherd</option>
+                <option value="Miniature Schnauzer">Miniature Schnauzer</option>
+              </select>
+          
+              <label for="gender-waiting">Gender preference? *</label>
+              <select id="gender-waiting" name="gender-waiting">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Any">No Preference</option>
+                <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option>
+              </select>
+          
+              <label for="specific-waitingTime">Is there a specific time you 
+                are looking to bring a puppy home? *</label>
+              <textarea id="specific-waitingTime" name="specific-waitingTime" rows="2"></textarea>
+            </div>
+            
 
             <label for="living">Tell us about your living environment 
                 (e.g., house or flat, garden, outdoor space, etc.). *</label>
@@ -262,6 +361,8 @@
 <script src="../../Scripts/jquery-3.7.1.min.js"></script>
 <script src="../../Scripts/scripts.js"></script>
 <script src="Scripts/form-handler.js"></script>
+<script src="Scripts/form-ui.js"></script>
+<script type="module" src="Scripts/form-data.js"></script>
 
 
 
