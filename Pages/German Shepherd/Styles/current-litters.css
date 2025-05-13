@@ -159,6 +159,7 @@ img {
     display:flex;
     flex-direction: row;
     margin-top:7%;
+    justify-content: center;
 }
 
 .puppies-btn {
@@ -183,6 +184,7 @@ img {
 .arrow-icon {
     font-size:clamp(14px, 1.6vw, 22px); 
     display:inline-block;
+    align-self: center;
 }
 
 .rotated {
@@ -353,6 +355,9 @@ img {
     transition: box-shadow 0.3s;
   }
   
+  .puppy.is-available h3 {
+    font-size:clamp(16px, 2.2vw, 30px) !important;
+  }
   .puppy.is-available:hover {
     box-shadow: 0 0 1.5vw rgba(255, 255, 255, 0.6);
   }

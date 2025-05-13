@@ -159,6 +159,7 @@ img {
     display:flex;
     flex-direction: row;
     margin-top:7%;
+    justify-content: center;
 }
 
 .puppy-button-container p {
@@ -337,6 +338,10 @@ img {
     border-radius: 1.2vw;
     padding: 1vw;
     transition: box-shadow 0.3s;
+  }
+
+  .puppy.is-available h3 {
+    font-size:clamp(16px, 2.2vw, 30px);
   }
   
   .puppy.is-available:hover {
