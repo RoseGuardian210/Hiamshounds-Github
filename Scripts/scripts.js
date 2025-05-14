@@ -164,7 +164,7 @@ $(document).ready(function() {
 });
 // || document.documentElement.scrollTop > 300
 function scrollFunctionPage() {
-  if (document.body.scrollTop > 700 || document.documentElement.scrollTop > 700) {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     $(".paragraph2").css("opacity", 1);
     $(".paragraph3").css("opacity", 1);
   }
