@@ -23,7 +23,7 @@ body {
 }
 
 .page-wrapper {
-    min-height: calc(var(--vh, 1vh) * 100);
+    min-height: auto;
     display:flex;
     flex-direction: column;
 }
@@ -106,7 +106,8 @@ main {
     }
     body {
         padding-top:28vw;
-        background-position-x:50%;
+        background-position: center top !important;
+    background-size: cover !important;
         background-attachment: scroll !important;
     }
     .information-container {
