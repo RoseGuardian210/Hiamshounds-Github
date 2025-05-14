@@ -6,10 +6,6 @@ body {
     padding-right:2vw;
     padding-bottom:0;
     background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../../../Images/Randoms/shnu-pup.webp);
-    background-position-x:30%;
-    background-position-y: 20%;
-    background-size:cover;
-    background-repeat: no-repeat;
     background-attachment: scroll;
     overflow-x:hidden;
     align-items: center;
@@ -18,7 +14,12 @@ body {
 
 @media only screen and (min-width: 1100px) {
   body {
-    background-attachment: fixed;
+    background: url('../../../Images/Randoms/shnu-pup.webp') no-repeat fixed;
+    background-size: cover;
+    background-position: center 20%;
+  }
+  .mobile-bg {
+    display: none;
   }
 }
 
@@ -109,6 +110,18 @@ main {
         background-position: center top !important;
     background-size: cover !important;
         background-attachment: scroll !important;
+    }
+    .mobile-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background-image: url('../../../Images/Randoms/shnu-pup.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .information-container {
         width:100%;
