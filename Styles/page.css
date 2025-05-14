@@ -336,6 +336,7 @@ body {
         margin-bottom:15%;
         width:100%;
         left: -150%;
+        opacity:0;
     }
     .paragraph2 {
         flex-direction: column;
@@ -346,6 +347,7 @@ body {
         margin-bottom:15%;
         position:relative;
         right: -150%;
+        opacity: 0;
     }
     .paragraph3 {
         flex-direction: column-reverse;
@@ -355,6 +357,7 @@ body {
         border-radius:0;
         position:relative;
         left:-150%;
+        opacity: 0;
     }
     
     .paragraph-image-puppies,
