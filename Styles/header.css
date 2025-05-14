@@ -203,14 +203,15 @@ header ul li ul li ul {
         width:101%;
         justify-content: center;
         left:-1%;
-        height:10vw;
+        height:7vw;
         min-height:60px;
     }
     header.mobile {
-        transition: height 0.5s ease;
+        transition: height 1s ease;
     }
     .logo-scrolled {
         display:none !important;
+        
     }
     .menuToggle-scrolled {
         position:relative;
