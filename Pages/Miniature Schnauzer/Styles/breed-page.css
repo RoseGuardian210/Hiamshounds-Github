@@ -5,7 +5,7 @@ body {
     padding-left:2vw;
     padding-right:2vw;
     padding-bottom:0;
-    background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../../../Images/Randoms/shnu-pup.jpg);
+    background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../../../Images/Randoms/shnu-pup.webp);
     background-position-x:30%;
     background-position-y: 20%;
     background-size:cover;
@@ -91,9 +91,17 @@ main {
 }
 
 @media only screen and (min-width:300px) and (max-width:1100px) {
+    html, body {
+        overflow-x: hidden;
+        overscroll-behavior: none; /* Optional: limits bounce scroll */
+    }
+    .fullscreen-section {
+        height: calc(var(--vh, 1vh) * 100);
+    }
     body {
         padding-top:28vw;
         background-position-x:50%;
+        background-attachment: scroll;
     }
     .information-container {
         width:100%;
