@@ -10,7 +10,7 @@ $(window).on("scroll", function scrollFunctionPage() {
 
   if (scrollTop + windowHeight >= triggerPoint) {
     // Trigger animation once
-    $("#our-standarts").slideDown(1200).css("opacity", 1);
+    $("#our-standarts").slideDown(1400).css("opacity", 1);
 
     // Optional: unbind scroll to avoid repeat animation
     $(window).off("scroll");
