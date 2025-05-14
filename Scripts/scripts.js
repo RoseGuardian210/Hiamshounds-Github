@@ -162,10 +162,14 @@ $(document).ready(function() {
   $(".background-container").css("opacity", 1);
   $(".paragraph1").css("opacity", 1);
 });
-// || document.documentElement.scrollTop > 300
-function scrollFunctionPage() {
-  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-    $(".paragraph2").css("opacity", 1);
-    $(".paragraph3").css("opacity", 1);
-  }
-}
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      $(".paragraph2").css("opacity", 1);
+      $(".paragraph3").css("opacity", 1);
+      observer.disconnect(); // stop observing after it happens once
+    }
+  });
+});
+
+observer.observe(document.querySelector(".paragraph1"));
