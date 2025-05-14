@@ -154,28 +154,3 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 10000);
 }
-
-
-// page
-
-$(document).ready(function() {
-  $(".background-container").css("opacity", 1);
-  $(".paragraph1").animate({left:0, opacity:1}, 800);
-});
-$(window).on("scroll", function scrollFunctionPage() {
-  const triggerElement = $(".paragraph1");
-  const scrollTop = $(window).scrollTop();
-  const windowHeight = $(window).height();
-  const triggerPoint = triggerElement.offset().top + triggerElement.outerHeight();
-
-  if (scrollTop + windowHeight >= triggerPoint) {
-    // Trigger animation once
-    $(".paragraph2").animate({right: 0, opacity:1 }, 800);
-    setTimeout(() => {
-      $(".paragraph3").animate({left: 0, opacity:1 }, 800);
-    }, 600);
-
-    // Optional: unbind scroll to avoid repeat animation
-    $(window).off("scroll");
-  }
-});

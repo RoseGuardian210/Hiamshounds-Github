@@ -50,7 +50,7 @@ main {
     margin-bottom:20%;
 }
 
-.image-container {
+.image-containerGER {
     display:flex;
     margin-right:1vw;
     height:min-content;
@@ -71,7 +71,7 @@ main {
     flex:2;
 }
 
-.paragraph {
+.paragraphGER {
     text-align:center;
     display:inline-block;
     font-size:clamp(14px, 1.75vw, 30px);
@@ -91,5 +91,17 @@ main {
     }
     .image- {
         max-height:40vw;
+    }
+    .image-containerGER {
+        position:relative;
+        left:150%;
+        opacity:0;
+        transition: opacity 0.15s ease;
+    }
+    .paragraphGER {
+        position:relative;
+        right:150%;
+        opacity:0;
+        transition: opacity 0.15s ease;
     }
 }
