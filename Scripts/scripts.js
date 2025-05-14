@@ -72,6 +72,7 @@ menuToggle.onclick = function (event) {
 
 window.onscroll = function () {
   scrollFunction();
+  scrollFunctionPage();
 };
 
 function scrollFunction() {
@@ -152,4 +153,19 @@ function showSlides() {
     if (slideIndex> slides.length) {slideIndex = 1}    
     slides[slideIndex-1].style.display = "block";  
     setTimeout(showSlides, 10000);
+}
+
+
+// page
+
+$(document).ready(function() {
+  $(".background-container").css("opacity", 1);
+  $(".paragraph1").css("opacity", 1);
+});
+// || document.documentElement.scrollTop > 300
+function scrollFunctionPage() {
+  if (document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000) {
+    $(".paragraph2").css("opacity", 1);
+    $(".paragraph3").css("opacity", 1);
+  }
 }
