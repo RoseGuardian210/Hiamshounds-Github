@@ -160,16 +160,22 @@ function showSlides() {
 
 $(document).ready(function() {
   $(".background-container").css("opacity", 1);
-  $(".paragraph1").css("opacity", 1);
+  $(".paragraph1").animate({left:0}, 800);
 });
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      $(".paragraph2").css("opacity", 1);
-      $(".paragraph3").css("opacity", 1);
-      observer.disconnect(); // stop observing after it happens once
-    }
-  });
-});
+$(window).on("scroll", function scrollFunctionPage() {
+  const triggerElement = $(".paragraph1");
+  const scrollTop = $(window).scrollTop();
+  const windowHeight = $(window).height();
+  const triggerPoint = triggerElement.offset().top + triggerElement.outerHeight();
 
-observer.observe(document.querySelector("#scroll-sentinel"));
+  if (scrollTop + windowHeight >= triggerPoint) {
+    // Trigger animation once
+    $(".paragraph2").animate({right: 0 }, 800);
+    setTimeout(() => {
+      $(".paragraph3").animate({left: 0 }, 800);
+    }, 600);
+
+    // Optional: unbind scroll to avoid repeat animation
+    $(window).off("scroll");
+  }
+});

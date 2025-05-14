@@ -332,10 +332,10 @@ body {
     }
     .paragraph1 {
         border-style:none;
+        position:relative;
         margin-bottom:15%;
         width:100%;
-        opacity:0;
-        transition: opacity 1.8s ease;
+        left: -150%;
     }
     .paragraph2 {
         flex-direction: column;
@@ -344,8 +344,8 @@ body {
         border:none;
         border-radius:0;
         margin-bottom:15%;
-        opacity:0;
-        transition: opacity 2s ease;
+        position:relative;
+        right: -150%;
     }
     .paragraph3 {
         flex-direction: column-reverse;
@@ -353,8 +353,8 @@ body {
         align-items:center;
         border:none;
         border-radius:0;
-        opacity:0;
-        transition: opacity 2.5s ease;
+        position:relative;
+        left:-150%;
     }
     
     .paragraph-image-puppies,
