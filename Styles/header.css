@@ -220,13 +220,13 @@ header ul li ul li ul {
     }
     header nav.scrolled {
         right:-4%;
-        top:10vw;
+        top:7vw;
         width:53%;
     }
     
 }
 
-@media (min-width:300px) and (max-width: 599px) {
+@media (min-width:300px) and (max-width: 856px) {
     header nav.scrolled {
         top:60px;
     }

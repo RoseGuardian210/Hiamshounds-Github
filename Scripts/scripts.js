@@ -80,7 +80,7 @@ function scrollFunction() {
   const menuToggle = document.querySelector(".menuToggle");
   const nav = document.querySelector("header nav");
 
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 1) {
     header.classList.add("mobile");
     logo.classList.add("logo-scrolled");
     menuToggle.classList.add("menuToggle-scrolled");
