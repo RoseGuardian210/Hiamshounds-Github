@@ -7,12 +7,13 @@ body {
     padding-bottom:0;
     background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../../../Images/Randoms/shnu-pup.webp);
     background-attachment: scroll;
+    background-repeat: no-repeat;
     overflow-x:hidden;
     align-items: center;
     cursor:default;
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1100.1px) {
   body {
     background: url('../../../Images/Randoms/shnu-pup.webp') no-repeat fixed;
     background-size: cover;
