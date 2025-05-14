@@ -8,15 +8,33 @@ body {
     padding-bottom:0;
     background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../Images/Randoms/Gira.webp);
     background-position-y:20%;
-    background-size:cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     overflow-x:hidden;
     cursor:default;
 }
+
+@media only screen and (min-width: 1100.1px) {
+  body {
+    background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../Images/Randoms/Gira.webp) no-repeat fixed;
+    background-size: cover;
+    background-position: center 20%;
+  }
+  .mobile-bg {
+    display: none;
+  }
+}
+
+.page-wrapper {
+    min-height: auto;
+    display:flex;
+    flex-direction: column;
+}
+
 .main {
     flex:1;
 }
+
 .background-container {
     position: relative;
     text-align:center;
@@ -270,9 +288,30 @@ body {
 /* mobile device */
 
 @media only screen and (min-width:300px) and (max-width:1100px) {
+    html, body {
+        overflow-x: hidden;
+        overscroll-behavior: none; /* Optional: limits bounce scroll */
+    }
+    .fullscreen-section {
+        height: calc(var(--vh, 1vh) * 100);
+    }
     body {
         padding-top:28vw;
-        background-position-x:85%;
+        background-position: center top !important;
+        background-size: cover !important;
+        background-attachment: scroll !important;
+    }
+    .mobile-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background-image: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../Images/Randoms/Gira.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     .background-container {
         justify-content: center;

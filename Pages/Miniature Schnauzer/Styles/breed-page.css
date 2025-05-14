@@ -109,7 +109,7 @@ main {
     body {
         padding-top:28vw;
         background-position: center top !important;
-    background-size: cover !important;
+        background-size: cover !important;
         background-attachment: scroll !important;
     }
     .mobile-bg {
