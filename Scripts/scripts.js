@@ -172,4 +172,4 @@ const observer = new IntersectionObserver((entries) => {
   });
 });
 
-observer.observe(document.querySelector(".paragraph1"));
+observer.observe(document.querySelector("#scroll-sentinel"));
