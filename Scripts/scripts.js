@@ -69,6 +69,29 @@ menuToggle.onclick = function (event) {
   this.setAttribute('aria-expanded', expanded);
   event.stopPropagation();
 };
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  const header = document.querySelector("header");
+  const logo = document.querySelector(".logo");
+  const menuToggle = document.querySelector(".menuToggle");
+  const nav = document.querySelector("header nav");
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    header.classList.add("mobile");
+    logo.classList.add("logo-scrolled");
+    menuToggle.classList.add("menuToggle-scrolled");
+    nav.classList.add("scrolled");
+  } else {
+    header.classList.remove("mobile");
+    logo.classList.remove("logo-scrolled");
+    menuToggle.classList.remove("menuToggle-scrolled");
+    nav.classList.remove("scrolled");
+  }
+}
         
           
 // footer

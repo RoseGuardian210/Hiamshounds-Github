@@ -199,4 +199,27 @@ header ul li ul li ul {
         font-size:14px;
         padding:7px 10px;
     }
+    .mobile {
+        width:101%;
+        justify-content: center;
+        left:-1%;
+        height:10vw;
+    }
+    header.mobile {
+        transition: height 0.5s ease;
+    }
+    .logo-scrolled {
+        display:none !important;
+    }
+    .menuToggle-scrolled {
+        position:relative;
+        justify-self:center;
+        top:0.1vh;
+    }
+    header nav.scrolled {
+        right:-4vw;
+        top:6.5vh;
+        width:53%;
+    }
+    
 }
