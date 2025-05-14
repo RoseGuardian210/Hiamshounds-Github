@@ -18,11 +18,9 @@ $(document).ready(function() {
 });
 $(window).on("scroll", function scrollFunctionPage() {
   const triggerElement = $(".paragraph1");
-  const triggerElementAboutUs = $("#OurBeliefsInformation");
   const scrollTop = $(window).scrollTop();
   const windowHeight = $(window).height();
   const triggerPoint = triggerElement.offset().top + triggerElement.outerHeight();
-  const triggerPoint2 = triggerElementAboutUs.offset().top + triggerElementAboutUs.outerHeight();
 
   if (scrollTop + windowHeight >= triggerPoint) {
     // Trigger animation once
