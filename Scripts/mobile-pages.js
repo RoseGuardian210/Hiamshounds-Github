@@ -15,7 +15,6 @@ $(document).ready(function() {
   $(".paragraphSCH").animate({left: 0, opacity: 1}, 800, 'swing');
   $(".image-containerGER").animate({left: 0, opacity: 1}, 800, 'swing');
   $(".paragraphGER").animate({right: 0, opacity: 1}, 800, 'swing');
-  $("#OurBeliefsInformation").slideDown(600);
 });
 $(window).on("scroll", function scrollFunctionPage() {
   const triggerElement = $(".paragraph1");
@@ -31,13 +30,6 @@ $(window).on("scroll", function scrollFunctionPage() {
     setTimeout(() => {
       $(".paragraph3").animate({left: 0, opacity:1 }, 800, 'swing');
     }, 600);
-
-    // Optional: unbind scroll to avoid repeat animation
-    $(window).off("scroll");
-  }
-  else if (scrollTop + windowHeight >= triggerPoint2) {
-    // Trigger animation once
-    $("#our-standarts").slideDown(600);
 
     // Optional: unbind scroll to avoid repeat animation
     $(window).off("scroll");
