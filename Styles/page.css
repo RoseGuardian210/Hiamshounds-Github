@@ -288,7 +288,7 @@ body {
         background-position-y:20%;
         background-size:cover;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
     }
     .background-container {
         justify-content: center;
