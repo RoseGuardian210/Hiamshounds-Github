@@ -288,6 +288,8 @@ body {
         background-size:cover;
         background-repeat: no-repeat;
         background-attachment: scroll;
+        height:max-content;
+        padding-top:-28vw;
     }
     .background-container {
         justify-content: center;
