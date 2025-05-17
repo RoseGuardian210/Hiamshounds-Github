@@ -289,7 +289,6 @@ body {
         background-repeat: no-repeat;
         background-attachment: fixed;
         padding-top:28vw;
-        min-height:100vh;
     }
     .background-container {
         justify-content: center;
