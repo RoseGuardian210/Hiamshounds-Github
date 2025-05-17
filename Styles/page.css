@@ -281,7 +281,14 @@ body {
     body {
         padding-top:28vw;
         background-position-x:85%;
-        background-attachment: scroll !important;
+        background:none !important;
+    }
+    .mobile-bg {
+        background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../Images/Randoms/Gira.webp);
+        background-position-y:20%;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
     }
     .background-container {
         justify-content: center;
