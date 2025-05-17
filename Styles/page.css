@@ -287,7 +287,7 @@ body {
         background-position-x:85%;
         background-size:cover;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: scroll;
         padding-top:28vw;
     }
     .background-container {
