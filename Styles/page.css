@@ -281,6 +281,7 @@ body {
     body {
         padding-top:28vw;
         background-position-x:85%;
+        background-attachment: scroll !important;
     }
     .background-container {
         justify-content: center;
