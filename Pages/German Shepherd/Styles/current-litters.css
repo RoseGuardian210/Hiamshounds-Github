@@ -16,7 +16,15 @@
 
 .text-container {
     display:flex;
+    flex-direction: column;
     flex:2;
+}
+
+.text-container h2 {
+    font-size: clamp(16px, 2.2vw, 35px);
+    color:white;
+    text-align: center;
+    padding:1vw 1.5vw;
 }
 
 .text {

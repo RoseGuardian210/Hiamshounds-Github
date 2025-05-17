@@ -1,103 +1,188 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const interestSelect = document.getElementById('interest');
-  const litterSection = document.getElementById('litter-section');
-  const upcomingLitterBreed = document.getElementById('upcoming-litter-breed');
-  const waitingSection = document.getElementById('waiting-section');
+// document.addEventListener('DOMContentLoaded', () => {
+//   const interestSelect = document.getElementById('interest');
+//   const litterSection = document.getElementById('litter-section');
+//   const upcomingLitterBreed = document.getElementById('upcoming-litter-breed');
+//   const waitingSection = document.getElementById('waiting-section');
 
-  const puppiesShepherds = document.getElementById('puppies-shepherds');
-  const puppiesSchnauzers = document.getElementById('puppies-schnauzers');
-  const upcomingShepherds = document.getElementById('upcoming-Shepherds');
+//   const puppiesShepherds = document.getElementById('puppies-shepherds');
+//   const puppiesSchnauzers = document.getElementById('puppies-schnauzers');
+//   const upcomingShepherds = document.getElementById('upcoming-Shepherds');
 
-  const breedCurrent = document.getElementById('puppy-breed');
-  const breedUpcoming = document.getElementById('breed-upcoming');
-  const breedWaiting = document.getElementById('breed-waiting');
+//   const breedCurrent = document.getElementById('puppy-breed');
+//   const breedUpcoming = document.getElementById('breed-upcoming');
+//   const breedWaiting = document.getElementById('breed-waiting');
 
-  function resetAll() {
-    litterSection.style.display = 'none';
-    upcomingLitterBreed.style.display = 'none';
-    waitingSection.style.display = 'none';
-    puppiesShepherds.style.display = 'none';
-    puppiesSchnauzers.style.display = 'none';
-    upcomingShepherds.style.display = 'none';
-  }
+//   function resetAll() {
+//     litterSection.style.display = 'none';
+//     upcomingLitterBreed.style.display = 'none';
+//     waitingSection.style.display = 'none';
+//     puppiesShepherds.style.display = 'none';
+//     puppiesSchnauzers.style.display = 'none';
+//     upcomingShepherds.style.display = 'none';
+//   }
 
-  function handleInterestChange() {
-    resetAll();
-    const interest = interestSelect.value;
+//   function handleInterestChange() {
+//     resetAll();
+//     const interest = interestSelect.value;
 
-    if (interest === 'Current Litter') {
-      litterSection.style.display = 'block';
+//     if (interest === 'Current Litter') {
+//       litterSection.style.display = 'block';
 
-      // Trigger to apply breed logic
-      handleBreedChange('current');
+      
+//       handleBreedChange('current');
 
-    } else if (interest === 'Upcoming Litter') {
-      upcomingLitterBreed.style.display = 'block';
+//     } else if (interest === 'Upcoming Litter') {
+//       upcomingLitterBreed.style.display = 'block';
 
-      // Trigger to apply breed logic
-      handleBreedChange('upcoming');
+      
+//       handleBreedChange('upcoming');
 
-    } else if (interest === 'Waiting List') {
-      waitingSection.style.display = 'block';
+//     } else if (interest === 'Waiting List') {
+//       waitingSection.style.display = 'block';
 
-      // Trigger to apply breed logic
-      handleBreedChange('waiting');
+//       handleBreedChange('waiting');
+//     }
+//   }
+
+//   function handleBreedChange(source) {
+//   puppiesShepherds.style.display = 'none';
+//   puppiesSchnauzers.style.display = 'none';
+//   upcomingShepherds.style.display = 'none';
+
+//   let breed = '';
+
+//   if (source === 'current') {
+//     breed = breedCurrent?.value;
+//     if (breed === 'German Shepherd') {
+//       puppiesShepherds.style.display = 'block';
+//     } else if (breed === 'Miniature Schnauzer') {
+//       puppiesSchnauzers.style.display = 'block';
+//     }
+
+//   } else if (source === 'upcoming') {
+//     breed = breedUpcoming?.value;
+//     if (breed === 'German Shepherd') {
+//       upcomingShepherds.style.display = 'block';
+//     }
+
+//   }
+  
+// }
+
+// function updatePuppiesShepherds() {
+//   const interest = interestSelect.value;
+//   const breed = puppyBreedSelect.value;
+
+  
+//   if (interest === 'Current Litter' && breed === 'German Shepherd') {
+//     puppiesShepherds.classList.remove('hidden');
+//   } else {
+//     puppiesShepherds.classList.add('hidden');
+//   }
+// }
+
+// document.getElementById('interest').addEventListener('change', function () {
+//   updatePuppiesShepherds();
+// });
+
+// document.getElementById('puppy-breed').addEventListener('change', function () {
+//   updatePuppiesShepherds();
+// });
+
+
+//   // Event listeners
+//   interestSelect.addEventListener('change', handleInterestChange);
+
+//   breedCurrent?.addEventListener('change', () => handleBreedChange('current'));
+//   breedUpcoming?.addEventListener('change', () => handleBreedChange('upcoming'));
+//   breedWaiting?.addEventListener('change', () => handleBreedChange('waiting'));
+
+  
+//   handleInterestChange();
+// });
+
+
+(function() {
+  document.addEventListener('DOMContentLoaded', () => {
+    const interestSelect = document.getElementById('interest');
+    const litterSection = document.getElementById('litter-section');
+    const upcomingLitterBreed = document.getElementById('upcoming-litter-breed');
+    const waitingSection = document.getElementById('waiting-section');
+
+    const puppiesShepherds = document.getElementById('puppies-shepherds');
+    const puppiesSchnauzers = document.getElementById('puppies-schnauzers');
+    const upcomingShepherds = document.getElementById('upcoming-Shepherds');
+
+    const breedCurrent = document.getElementById('puppy-breed');
+    const breedUpcoming = document.getElementById('breed-upcoming');
+    const breedWaiting = document.getElementById('breed-waiting');
+
+    function resetAll() {
+      litterSection.style.display = 'none';
+      upcomingLitterBreed.style.display = 'none';
+      waitingSection.style.display = 'none';
+      puppiesShepherds.style.display = 'none';
+      puppiesSchnauzers.style.display = 'none';
+      upcomingShepherds.style.display = 'none';
     }
-  }
 
-  function handleBreedChange(source) {
-  puppiesShepherds.style.display = 'none';
-  puppiesSchnauzers.style.display = 'none';
-  upcomingShepherds.style.display = 'none';
+    function handleInterestChange() {
+      resetAll();
+      const interest = interestSelect.value;
 
-  let breed = '';
-
-  if (source === 'current') {
-    breed = breedCurrent?.value;
-    if (breed === 'German Shepherd') {
-      puppiesShepherds.style.display = 'block';
-    } else if (breed === 'Miniature Schnauzer') {
-      puppiesSchnauzers.style.display = 'block';
+      if (interest === 'Current Litter') {
+        litterSection.style.display = 'block';
+        handleBreedChange('current');
+      } else if (interest === 'Upcoming Litter') {
+        upcomingLitterBreed.style.display = 'block';
+        handleBreedChange('upcoming');
+      } else if (interest === 'Waiting List') {
+        waitingSection.style.display = 'block';
+        handleBreedChange('waiting');
+      }
     }
 
-  } else if (source === 'upcoming') {
-    breed = breedUpcoming?.value;
-    if (breed === 'German Shepherd') {
-      upcomingShepherds.style.display = 'block';
+    function handleBreedChange(source) {
+      puppiesShepherds.style.display = 'none';
+      puppiesSchnauzers.style.display = 'none';
+      upcomingShepherds.style.display = 'none';
+
+      let breed = '';
+      if (source === 'current') {
+        breed = breedCurrent?.value;
+        if (breed === 'German Shepherd') {
+          puppiesShepherds.style.display = 'block';
+        } else if (breed === 'Miniature Schnauzer') {
+          puppiesSchnauzers.style.display = 'block';
+        }
+      } else if (source === 'upcoming') {
+        breed = breedUpcoming?.value;
+        if (breed === 'German Shepherd') {
+          upcomingShepherds.style.display = 'block';
+        }
+      }
     }
 
-  }
-  // No action for 'waiting' — no individual puppies shown
-}
+    const puppyBreedSelect = document.getElementById('puppy-breed');
 
-function updatePuppiesShepherds() {
-  const interest = interestSelect.value;
-  const breed = puppyBreedSelect.value;
+    function updatePuppiesShepherds() {
+      const interest = interestSelect.value;
+      const breed = puppyBreedSelect?.value;
+      if (interest === 'Current Litter' && breed === 'German Shepherd') {
+        puppiesShepherds.classList.remove('hidden');
+      } else {
+        puppiesShepherds.classList.add('hidden');
+      }
+    }
 
-  // Only show if interest is 'Current Litter' AND breed is 'German Shepherd'
-  if (interest === 'Current Litter' && breed === 'German Shepherd') {
-    puppiesShepherds.classList.remove('hidden');
-  } else {
-    puppiesShepherds.classList.add('hidden');
-  }
-}
+    interestSelect.addEventListener('change', handleInterestChange);
+    breedCurrent?.addEventListener('change', () => handleBreedChange('current'));
+    breedUpcoming?.addEventListener('change', () => handleBreedChange('upcoming'));
+    breedWaiting?.addEventListener('change', () => handleBreedChange('waiting'));
 
-document.getElementById('interest').addEventListener('change', function () {
-  updatePuppiesShepherds();
-});
+    interestSelect.addEventListener('change', updatePuppiesShepherds);
+    puppyBreedSelect?.addEventListener('change', updatePuppiesShepherds);
 
-document.getElementById('puppy-breed').addEventListener('change', function () {
-  updatePuppiesShepherds();
-});
-
-
-  // Event listeners
-  interestSelect.addEventListener('change', handleInterestChange);
-
-  breedCurrent?.addEventListener('change', () => handleBreedChange('current'));
-  breedUpcoming?.addEventListener('change', () => handleBreedChange('upcoming'));
-  breedWaiting?.addEventListener('change', () => handleBreedChange('waiting'));
-
-  // Initialize on load
-  handleInterestChange();
-});
+    handleInterestChange();
+  });
+})();

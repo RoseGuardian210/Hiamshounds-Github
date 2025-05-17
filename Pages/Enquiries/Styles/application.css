@@ -15,6 +15,46 @@
     border: solid 0.2vw black;
 }
 
+.current-litter {
+    justify-items: center;
+}
+
+#puppy-breed,
+#whichPuppyGer,
+#whichPuppySCH,
+#breed-upcoming,
+#gender-upcomingGER,
+#litterShep-upcoming,
+#breed-waiting,
+#gender-waiting {
+    justify-self: center;
+    width:max-content;
+    text-align: center;
+}
+
+#specificGER,
+#specific-waitingTime {
+    width:63.5vw;
+    position:relative;
+    right:0vw;
+
+}
+
+
+#puppies-shepherds,
+#puppies-schnauzers,
+#upcoming-litter-breed,
+#upcoming-Shepherds,
+#waiting-section {
+    justify-items: center;
+    align-items: center;
+    width:100%;
+}
+
+
+
+
+
 .applicationForm {
     background: white;
     padding: 2.5vw;
