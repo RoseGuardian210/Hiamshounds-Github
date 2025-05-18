@@ -86,7 +86,8 @@ body {
 }
 
 @media only screen and (max-width:1100px) {
-    .mobile-bg {
+    body {
+        padding-top:28vw;
         background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../../../Images/Randoms/Gira\ with\ pups.webp);
         background-repeat:no-repeat;
         background-attachment: fixed;
