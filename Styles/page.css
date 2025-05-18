@@ -284,10 +284,11 @@ body {
     }
     .mobile-bg {
         background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../Images/Randoms/Gira.webp);
-        background-position-x:85%;
+        background-position-x:80%;
+        background-position-y:-20%;
         background-size:cover;
         background-repeat: no-repeat;
-        background-attachment: scroll;
+        background-attachment: fixed;
         padding-top:28vw;
     }
     .background-container {
@@ -388,7 +389,10 @@ body {
         max-height:40vw;
     }
     .paragraph1-title {
-        font-size:5vw
+        font-size:clamp(18px, 5vw, 40px);
+        text-indent: -0.5vw;
+        padding: 0 0.8vw;
+        align-self:center;
     }
     .paragraph-text,
     .paragraph-text1 {
