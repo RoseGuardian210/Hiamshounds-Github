@@ -1,0 +1,139 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top:11vw;
+    margin:0;
+    padding-left:2vw;
+    padding-right:2vw;
+    padding-bottom:0;
+    background: linear-gradient(rgba(255,255,255,0.5)), rgba(255,255,255,0.5) url(../../../Images/Randoms/running\ kentauras.webp);
+    background-position-x:30%;
+    background-position-y: -50%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x:hidden;
+    align-items: center;
+    cursor:default;
+}
+
+.page-title-container {
+    display:flex;
+    margin-bottom: 13%;
+    max-width:max-content;
+    justify-self:center;
+}
+
+.page-title {
+    font-size:clamp(30px, 6vw, 80px);
+    text-align: center;
+    font-family:'Domine', Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 0.15vw rgb(219, 206, 206);
+    color:rgb(43, 85, 183);
+    padding-top:5%;
+}
+
+.story-title-container {
+    display:flex;
+    justify-content: center;
+    margin-bottom:3%;
+}
+
+.story-paragraph-container {
+    padding:2% 0 2% 2%;
+}
+
+.information-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    justify-self: center;
+    margin-top:10%;
+    position:relative;
+    width:80%;
+    background-color:rgba(66, 107, 202, 0.85);
+    padding:0vw 1.5vw 1.5vw 1.5vw;
+    border-radius:1vw;
+    border-style:solid;
+    font-family: "Domine", Arial, Helvetica, sans-serif;
+    margin-bottom:10%;
+}
+
+.image-container {
+    display:flex;
+    margin-right:1vw;
+    height:min-content;
+    flex:1;
+    padding:1.5vw;
+    background-color:rgb(255, 255, 255);
+    align-self:center;
+}
+
+.information-image {
+    height:auto;
+    max-width:100%;
+    align-self: center;
+    box-shadow: 0vw 0vw 1vw 0.6vw rgba(0,0,0,0.5);
+}
+
+.information-title {
+    z-index: 12;
+    display:block;
+    text-align: center;
+    font-family:'Domino',Arial, Helvetica, sans-serif;
+    font-weight:400;
+    font-size:clamp(25px, 3.2vw, 50px);
+    color:white;
+    padding:1vw 0 1.5vw 0;
+}
+
+.paragraph-container {
+    flex:2;
+}
+
+.paragraph {
+    text-align:center;
+    display:inline-block;
+    font-size:clamp(14px, 1.75vw, 30px);
+    color:white;
+    font-family:'Merriweather sans', Arial, Helvetica, sans-serif;
+    line-height: 150%;
+}
+
+@media only screen and (max-width:1100px) {
+    body {
+        padding-top:28vw;
+    }
+    .information-container {
+        flex-direction: column !important;
+        gap:2vw;
+        width:90%;
+    }
+    #OurBeliefsInformation {
+        display:none;
+        opacity:0;
+        transition: opacity 1s;
+    }
+    #our-standarts {
+        margin-bottom:25%;
+        display:none;
+        opacity:0;
+        transition: opacity 1s;
+    }
+    .image-container {
+        margin-top:2%;
+        margin-bottom:2vw;
+    }
+    .information-image {
+        max-height:40vw;
+        width:auto;
+    }
+    .page-title {
+        margin-bottom:-5vw;
+    }
+    .beliefs {
+        flex-direction: column !important;
+    }
+    .standarts {
+        flex-direction: column !important;
+    }
+}

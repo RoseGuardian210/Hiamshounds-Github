@@ -1,0 +1,169 @@
+
+
+#pdfContent {
+    background-color: rgba(66, 107, 202, 0.7);
+    color: black;
+    margin-bottom:9vw;
+    width:75%;
+    padding-bottom:1vw;
+    border-radius:1vw;
+    padding-top:1vw;
+    overflow: hidden;
+    page-break-inside: avoid;
+    justify-self:center;
+    color:white;
+    border: solid 0.2vw black;
+}
+
+.current-litter {
+    justify-items: center;
+}
+
+#puppy-breed,
+#whichPuppyGer,
+#whichPuppySCH,
+#breed-upcoming,
+#gender-upcomingGER,
+#litterShep-upcoming,
+#breed-waiting,
+#gender-waiting {
+    justify-self: center;
+    width:max-content;
+    text-align: center;
+}
+
+#specificGER,
+#specific-waitingTime {
+    width:63.5vw;
+    position:relative;
+    right:0vw;
+
+}
+
+
+#puppies-shepherds,
+#puppies-schnauzers,
+#upcoming-litter-breed,
+#upcoming-Shepherds,
+#waiting-section {
+    justify-items: center;
+    align-items: center;
+    width:100%;
+}
+
+
+
+
+
+.applicationForm {
+    background: white;
+    padding: 2.5vw;
+    border-radius: 0.8vw;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.applicationTitle {
+    text-align: center;
+    margin-bottom: 2.5vw;
+    height:max-content;
+    font-size: clamp(22px, 3.5vw, 45px);
+    margin-top:1vw;
+
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    display:block;
+    font-weight:500;
+    width:75%;
+    text-align: center;
+    margin-bottom:1.5vw;
+    font-size: clamp(16px, 2.2vw, 35px);
+    line-height: clamp(1.4em, 2vw, 2em)
+}
+
+form input,
+form textarea,
+form select {
+    width: 75%;
+    padding: 0.6vw;
+    box-sizing: border-box;
+    border: 0.1vw solid #ccc;
+    border-radius: 0.4vw;
+    font-size:clamp(14px, 1.75vw, 30px);
+    font-family:'Domino', 'Merriweather sans', Arial, Helvetica, sans-serif;
+    margin-bottom:1.2vw;
+}
+
+form input,
+form select {
+    text-align:center;
+}
+
+form button {
+    margin-top: 2vw;
+    padding: 1vw 3vw;
+    background-color: rgb(118, 164, 239);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+    color 0.15s;
+    font-size: clamp(14px, 1.75vw, 25px);
+}
+
+form button:hover,
+form button:active {
+    background-color: white;
+    color:rgb(66, 107, 202);
+}
+
+.actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.actions button {
+    padding: 10px 20px;
+    background-color: rgb(66, 107, 202);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.actions button:hover,
+.actions button:active {
+    background-color: rgb(118, 164, 239);
+    border:solid black 1vw;
+}
+
+#responseMessage {
+    margin-top: 15px;
+    color: green;
+    font-size:clamp(18px, 3vw, 45px);
+}
+
+@media screen and (max-width:1100px) {
+    #pdfContent {
+        width:90%;
+    }
+}
+
+@media print {
+    * {
+        break-inside: avoid;
+        page-break-inside: avoid;
+      }
+    button {
+      display: none;
+    }
+  }

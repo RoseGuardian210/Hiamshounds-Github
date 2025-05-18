@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta name="description" content="Enquiry form applying for a puppy or joining a waitting list.">
+    <title>Hiams Hounds</title>
+    <link rel="icon" href="../../Images/Logos/Title puppy.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../Styles/header.css">
+    <link rel="stylesheet" href="../../Styles/footer.css"> 
+    <link rel="stylesheet" href="Styles/page.css">
+    <link rel="stylesheet" href="Styles/application.css">
+
+    <!-- font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="mobile-bg"></div>
+    <!-- header -->
+    
+    <header role="banner">
+        <a href="../../index.html" class="logo" aria-label="Hiams Hounds Home" alt="Home button and Hiamshounds logo"></a>
+      
+        <div class="menuToggle" 
+             role="button" 
+             tabindex="0" 
+             aria-label="Toggle navigation menu" 
+             aria-expanded="false" 
+             aria-controls="main-nav">
+        </div>
+      
+        <nav id="main-nav" role="navigation" aria-label="Main menu">
+          <ul>
+            <li><a href="../../index.html">Home</a></li>
+      
+            <li>
+              <a href="#" aria-haspopup="true" aria-expanded="false">
+                German Shepherds&thinsp;<b style="font-size:clamp(10px, 1vw, 18px);">&#9660;</b>
+              </a>
+              <ul>
+                <li><a href="../German Shepherd/German-Shepherd.html">About Breed</a></li>
+                <li><a href="../German Shepherd/Current-Litters.html">Current Litters</a></li>
+                <li><a href="../German Shepherd/Upcoming-Litters.html">Upcoming Litters</a></li>
+              </ul>
+            </li>
+      
+            <li>
+              <a href="#" aria-haspopup="true" aria-expanded="false">
+                Miniature Schnauzers&thinsp;<b style="font-size:clamp(10px, 1vw, 18px);">&#9660;</b>
+              </a>
+              <ul>
+                <li><a href="../Miniature Schnauzer/Miniature Schnauzer.html">About Breed</a></li>
+                <li><a href="../Miniature Schnauzer/Current-Litters.html">Current Litters</a></li>
+                <li><a href="../Miniature Schnauzer/Upcoming-Litters.html">Upcoming Litters</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="../About Us/About-Us.html">About Us</a></li>
+            <li><a href="../Enquiries/Enquiries.html">Enquiries</a></li>
+          </ul>
+        </nav>
+      </header>
+
+   <!-- information -->
+
+   <h1 class="page-title" id="enquiries-title">Enquiries</h1>
+
+   <div class="information-container" role="region" aria-labelledby="enquiries-title">
+        <!-- <div class="image-container">
+            <img class="image-" src="../../Images/Randoms/Rocky-wtf2.jpg">
+        </div> -->
+    <div class="paragraph-container">
+        <p class="paragraph">
+            If you are interested in one of our puppies, we kindly ask that you 
+            complete the application form below. This allows us to better 
+            understand your home environment, lifestyle, and experience, ensuring 
+            that each puppy is placed in a suitable and caring home.
+        </p>
+    </div>
+   </div>
+
+   <!-- Application form -->
+
+    <div id="pdfContent" role="form" aria-labelledby="application-form-title">
+        <h1 class="applicationTitle" id="application-form-title">Application Form</h1>
+
+        <form id="applicationForm" method="POST" action="/submit" aria-describedby="formInstructions">
+          <p id="formInstructions" class="visually-hidden">
+            All fields marked with an asterisk are required. Please complete the form as accurately as possible.
+          </p> 
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" required aria-required="true">
+          
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required aria-required="true">
+          
+            <label for="phone">Mobile/Telephone Number *</label>
+            <input type="tel" id="phone" name="phone" required aria-required="true">
+          
+            <label for="family">Do you have any children? If so, what are their ages? *</label>
+            <input type="text" id="family" name="family" required aria-required="true">
+          
+            <label for="interest">Are you Enquiring for a current 
+                litter, upcoming litter or to be on a waiting list? *</label>
+            <select id="interest" name="interest" required>
+                <option value="" disabled selected>Select One</option>
+                <option value="Current Litter">Current Litter</option>
+                <option value="Upcoming Litter">Upcoming Litter</option>
+                <option value="Waiting List">Waiting List</option>
+            </select> 
+            
+            <!-- current litter -->
+            
+            <div id="litter-section" class="current-litter" style="display:none;">
+              <label class="current-litter">Which breed are you enquiring for? *</label>
+              <select id="puppy-breed" name="puppy-breed">
+                <option value="" disabled selected>Select Breed</option>
+                <option value="Miniature Schnauzer">Miniature Schnauzer</option>
+                <option value="German Shepherd">German Shepherd</option>
+              </select>
+            </div>
+
+            <!-- If German Shepherds are selected  -->
+
+            <div id="puppies-shepherds" class="german-shepherdPUP" style="display:none">
+              <label for="whichPuppyGer">Which puppy would you like to enquire for? *</label>
+              <select id="whichPuppyGer" name="whichPuppyGer">
+                <option value="" disabled selected>No Puppies Available</option>
+                <!-- <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option> -->
+              </select>
+            </div>
+
+            <!-- If Miniature Schnauzers are selected -->
+
+            <div id="puppies-schnauzers" class="miniature-schnauzerPUP" style="display:none;">
+              <label for="whichPuppySCH">Which puppy would you like to enquire for? *</label>
+              <select id="whichPuppySCH" name="whichPuppySCH">
+                <option value="" disabled selected>Select gender or a puppy</option>
+                <option value="Dog" disabled>Dog</option>
+                <option value="Bitch">Bitch</option>
+                <option value="Hiamshounds Mergina">Hiamshounds Mergina</option>
+              </select>
+            </div>
+            
+            <!-- upcoming litters -->
+
+            <div class="upcoming-breed" id="upcoming-litter-breed" style="display:none;">
+              <label for="breed-upcoming">Which breed are you enquiring for? *</label>
+              <select id="breed-upcoming" name="breed-upcoming">
+                <option value="" disabled selected>Select Breed</option>
+                <option value="German Shepherd">German Shepherd</option>
+                <option value="Miniature Schnauzer" disabled selected>Miniature Schnauzer</option>
+              </select>
+            </div>
+
+            <!-- Upcoming litter German Shepherds -->
+
+            <div class="upcomingGer" id="upcoming-Shepherds" style="display:none;">
+              <label for="litterShep-upcoming">Which litter would you like to choose from? *</label>
+              <select id="litterShep-upcoming" name="litterShep-upcoming">
+                <option value="" disabled selected>Select Litter</option>
+                <option value="READEPTER FLICKA DAY">READEPTER FLICKA DAY date:(13/06/25)</option>
+                <option value="LOUD MUNCHKINTON">LOUD MUNCHKINTON date:(20/06/25)</option>
+              </select>
+              
+              <label for="gender-upcomingGER">Gender preference? *</label>
+              <select id="gender-upcomingGER" name="gender-upcomingGER">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Any">No Preference</option>
+                <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option>
+              </select>
+          
+              <label for="specificGER">Are you are intrested in a particular puppy or after
+                  any specific traits?</label>
+              <textarea id="specificGER" name="specificGER" rows="2"></textarea>
+            </div>
+
+            <!-- Upcoming litter Miniature Schnauzers -->
+
+            <!-- <div class="upcomingSCH" id="upcoming-Schnauzers" style="display:none;">
+              <label for="litterSCH-upcoming">Which litter would you like to choose from? *</label>
+              <select id="litterSCH-upcoming" name="litterSCH-upcoming">
+                <option value="" disabled selected>Select Litter</option>
+              </select>
+              
+              <label for="genderSCH">Gender preference? *</label>
+              <select id="genderSCH" name="genderSCH">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Any">No Preference</option>
+                <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option>
+              </select>
+          
+              <label for="specificSCH">Are you are intrested in a particular puppy or after
+                  any specific traits?</label>
+              <textarea id="specificSCH" name="specificSCH" rows="2"></textarea>
+            </div> -->
+            
+            <!-- waiting list -->
+
+
+            <div id="waiting-section" class="waitting-list" style="display:none;">
+              <label for="breed-waiting">Which breed are you enquiring for? *</label>
+              <select id="breed-waiting" name="breed-waiting">
+                <option value="" disabled selected>Select Breed</option>
+                <option value="German Shepherd">German Shepherd</option>
+                <option value="Miniature Schnauzer">Miniature Schnauzer</option>
+              </select>
+          
+              <label for="gender-waiting">Gender preference? *</label>
+              <select id="gender-waiting" name="gender-waiting">
+                <option value="" disabled selected>Select Gender</option>
+                <option value="Any">No Preference</option>
+                <option value="Dog">Dog</option>
+                <option value="Bitch">Bitch</option>
+              </select>
+          
+              <label for="specific-waitingTime">Is there a specific time you 
+                are looking to bring a puppy home? *</label>
+              <textarea id="specific-waitingTime" name="specific-waitingTime" rows="2"></textarea>
+            </div>
+            
+
+            <label for="living">Tell us about your living environment 
+                (e.g., house or flat, garden, outdoor space, etc.). *</label>
+            <textarea id="living" name="living" rows="4" required aria-required="true"></textarea>
+
+            <label for="pets">Do you currently have any pets at home?
+                 If yes could you please give more details *</label>
+            <textarea id="pets" name="pets" rows="4" required aria-required="true"></textarea>
+          
+            <label for="ownBreed">Have you owned this breed before? *</label>
+            <select id="ownBreed" name="ownBreed" required aria-required="true">
+              <option value="" disabled selected>Select Y/N</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          
+            <label for="research">Have you researched this breed? *</label>
+            <select id="research" name="research">
+              <option value="" disabled selected>Select Y/N</option>
+              <option value="Yes">Yes</option>
+              <option value="No">No</option>
+            </select>
+          
+            <label for="alone">How long will the puppy be left alone each day? *</label>
+            <select id="alone" name="alone" required aria-required="true">
+              <option value="" disabled selected>Select Time</option>
+              <option value="None">None</option>
+              <option value="1-2 hours">1-2 hours</option>
+              <option value="3-4 hours">3-4 hours</option>
+              <option value="5-6 hours">5-6 hours</option>
+              <option value="7-10 hours">7-10 hours</option>
+            </select>
+          
+            <label for="findUs">How did you find us? *</label>
+            <textarea id="findUs" name="findUs" rows="2" required aria-required="true"></textarea>
+
+            <label for="extraInfo">If you want to let us know more information about yourself,
+                please state it here.</label>
+            <textarea id="extraInfo" name="extraInfo" rows="4"></textarea>
+          
+            <button type="submit" aria-label="Submit application form">Submit Form</button>
+          </form>
+
+          <div id="formResponse" style="margin-top: 3vw; color: white; font-size: 2vw;" role="status" aria-live="polite"></div>
+
+    </div>
+    
+
+   <!-- footer -->
+
+   <footer role="contentinfo">
+    <div class="footer-container">
+    <a class="footerPrev" role="button" aria-label="Previous slide" tabindex="0">&lt;</a>
+
+    <div class="rail" role="group" aria-label="Footer information carousel">
+
+        <div id="slideshow" class="footer-div fade" role="region" aria-label="Address section" tabindex="-1">
+        <a tabindex="-1" class="address-p" 
+            target="_blank" 
+            href="https://www.google.com/maps/dir//Hiams+Farm,+Ely+CB6+2AZ/@52.4218247,0.0148147,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47d80d863260fa4d:0x13df5d94b37cfe03!2m2!1d0.0972613!2d52.4218428?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"
+            aria-label="Our address on Google Maps">
+            Our Address: Hiams Farm, Chatteris Road, Mepal. CB6 2AZ 
+        </a>
+        <a tabindex="-1" target="_blank" 
+            href="https://www.google.com/maps/dir//Hiams+Farm,+Ely+CB6+2AZ/@52.4218247,0.0148147,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47d80d863260fa4d:0x13df5d94b37cfe03!2m2!1d0.0972613!2d52.4218428?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"
+            aria-label="Location map">
+            <img tabindex="-1" class="location-logo" src="../../Images/Logos/location.png" alt="Map location icon">
+        </a>
+        </div>
+
+        <div class="footer-div fade" role="region" aria-label="Phone section" tabindex="-1">
+        <p class="telephone-p">
+            Our Phone:
+            <a tabindex="-1" class="whatsapp-number" 
+            target="_blank" 
+            href="https://api.whatsapp.com/send?phone=07714598190"
+            aria-label="Contact us on WhatsApp">
+            07714598190
+            </a>
+            We also do WhatsApp
+        </p>
+        <a tabindex="-1" href="https://api.whatsapp.com/send?phone=07714598190" 
+            target="_blank" 
+            aria-label="WhatsApp icon link">
+            <img tabindex="-1" class="whatsapp-logo" src="../../Images/Logos/whatsapp.png" alt="WhatsApp logo">
+        </a>
+        </div>
+
+        <div class="footer-div fade" role="region" aria-label="Facebook section" tabindex="-1">
+        <p class="facebook-p">Feel free to check us on Facebook</p>
+        <a tabindex="-1" href="https://www.facebook.com/profile.php?id=100063673625641" 
+            target="_blank" 
+            aria-label="Visit our Facebook page">
+            <img tabindex="-1" class="facebook-logo" src="../../Images/Logos/facebook.png" alt="Facebook logo">
+        </a>
+        </div>
+
+        <div class="footer-div fade" role="region" aria-label="Email section" tabindex="-1">
+        <a tabindex="-1" class="email" 
+            target="_top" 
+            href="mailto:hiamshounds@gmail.com"
+            aria-label="Send us an email">
+            hiamshounds@gmail.com
+        </a>
+        <a tabindex="-1" target="_blank" 
+            href="mailto:hiamshounds@gmail.com"
+            aria-label="Email icon link">
+            <img tabindex="-1" class="email-logo" src="../../Images/Logos/mail-logo.png" alt="Email icon">
+        </a>
+        </div>
+
+    </div>
+
+    <a class="footerNext" role="button" aria-label="Next slide" tabindex="0">&gt;</a>
+    </div>
+</footer>
+
+</body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="../../Scripts/jquery-3.7.1.min.js"></script>
+<script src="../../Scripts/scripts.js"></script>
+<script src="Scripts/form-handler.js"></script>
+<script src="Scripts/form-ui.js"></script>
+<script type="module" src="Scripts/form-data.js"></script>
+<script src="../../Scripts/mobile-pages.js"></script>
+
+
+
+</html>
